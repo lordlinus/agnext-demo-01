@@ -1,19 +1,13 @@
+from datetime import datetime
 from typing import List
 
-from autogen_core.components import (
-    DefaultTopicId,
-    RoutedAgent,
-    message_handler,
-)
-from autogen_core.components.models import (
-    LLMMessage,
-    AssistantMessage,
-    ChatCompletionClient,
-    SystemMessage,
-    UserMessage,
-)
 from autogen_core.base import MessageContext
-from datetime import datetime
+from autogen_core.components import (DefaultTopicId, RoutedAgent,
+                                     message_handler)
+from autogen_core.components.models import (AssistantMessage,
+                                            ChatCompletionClient, LLMMessage,
+                                            SystemMessage, UserMessage)
+
 from .data_types import GroupChatMessage, RequestToSpeak
 
 

@@ -1,34 +1,19 @@
-from promptflow.tracing import trace
-from autogen_core.components import (
-    DefaultTopicId,
-)
-from autogen_core.components.models import (
-    UserMessage,
-)
-from autogen_core.base import AgentId
-from autogen_core.components.models import (
-    AzureOpenAIChatCompletionClient,
-)
-import asyncio
-from promptflow.core import AzureOpenAIModelConfiguration
-from autogen_core.components import DefaultTopicId
-from autogen_core.components.models import (
-    UserMessage,
-)
 import asyncio
 
 from autogen_core.application import SingleThreadedAgentRuntime
-from autogen_core.components import DefaultSubscription
-from autogen_core.components.models import (
-    AzureOpenAIChatCompletionClient,
-)
+from autogen_core.base import AgentId
+from autogen_core.components import DefaultSubscription, DefaultTopicId
+from autogen_core.components.models import AzureOpenAIChatCompletionClient, UserMessage
+from promptflow.core import AzureOpenAIModelConfiguration
+from promptflow.tracing import trace
+
+from agents.data_types import GroupChatMessage
 from agents.editor import EditorAgent
 from agents.email_writer import EmailWriterAgent
 from agents.facebook_post_writer import FacebookPostWriterAgent
 from agents.marketing_manager import MarketingManagerAgent
 from agents.product_info_provider import ProductInfomationProviderAgent
 from agents.twitter_post_writer import TwitterPostWriterAgent
-from agents.data_types import GroupChatMessage
 
 
 class AGNextFlow:

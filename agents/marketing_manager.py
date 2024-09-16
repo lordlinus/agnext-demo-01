@@ -1,16 +1,11 @@
+import asyncio
 from typing import List
 
-from autogen_core.components import (
-    RoutedAgent,
-    message_handler,
-)
-from autogen_core.components.models import (
-    UserMessage,
-)
-from autogen_core.base import MessageContext
+from autogen_core.base import AgentId, MessageContext
+from autogen_core.components import RoutedAgent, message_handler
+from autogen_core.components.models import UserMessage
+
 from .data_types import GroupChatMessage, RequestToSpeak
-from autogen_core.base import MessageContext, AgentId
-import asyncio
 
 
 class MarketingManagerAgent(RoutedAgent):
