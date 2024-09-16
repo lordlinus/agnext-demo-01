@@ -1,0 +1,9 @@
+promptflow
+promptflow-azure
+promptflow[azureml-serving]
+promptflow-tools
+uvicorn
+# Install agnext read https://didactic-carnival-mz7oy65.pages.github.io/getting-started/installation.html
+# git clone https://github.com/microsoft/agnext.git
+# cd agnext/python/packages/autogen-core
+# pip install .

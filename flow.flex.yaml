@@ -1,0 +1,27 @@
+entry: flow:AGNextFlow
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  question:
+    type: string
+    default: Apple iPhone 16
+  chat_history:
+    type: list
+    default: ""
+outputs:
+  output:
+    type: string
+init:
+  model_config:
+    type: AzureOpenAIModelConfiguration
+    default:
+      azure_endpoint: https://ss-cchat-sf-ai-aiservices7wx5mg43sbnl4.openai.azure.com/
+      azure_deployment: gpt-4o
+      api_version: 2024-02-15-preview
+      api_key: ${api_key}
+  test_mode:
+    type: bool
+    default: true
+  # max_total_token:
+  #   type: int
+  #   default: 4096
